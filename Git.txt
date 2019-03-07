@@ -78,5 +78,9 @@
             说明: 每次同步都需要添加一定的同步信息, commit操作只能同步暂存区已经记录的内容
 
         [6] 查看commit日志
-            git log
-            git log --pretty=oneline
+            $: git log
+            $: git log --pretty=oneline
+
+        [7] 文件比较:
+            $: git diff [filename]
+            说明: 用于比较工作区文件和仓库文件差异
