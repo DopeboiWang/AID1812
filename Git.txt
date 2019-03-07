@@ -120,6 +120,12 @@
             git tag 查看标签列表
             git show [tag_name]  查看标签信息表
 
+        [6] 去往某个标签节点
+            $: git tag
+
+        [7] 删除标签
+            $: git tag -d [tag]
+
     5. 临时工作区
         [1] 创建临时保存工作区: 
             $: git stash
@@ -131,3 +137,10 @@
         [3] 应用某个保存的工作区:
             $: git stash apply [stash]
             
+        [4] 删除工作区
+            $: git stash drop [stash]   删除某一个工作区
+            $: git stash clear          删除所有保存的工作区
+
+作业:
+    1. 建立git仓库, 重复练习所有git命令
+    2. 登录github网站注册一个账号
