@@ -84,3 +84,40 @@
         [7] 文件比较:
             $: git diff [filename]
             说明: 用于比较工作区文件和仓库文件差异
+配置用户名为Strong        
+        [8] 放弃工作区修改
+            $: git checkout -- [filename]
+
+        [9] 从仓库恢复文件
+            $: git checkout [filename]
+
+        [10] 移动或删除文件并提交暂存
+            $: git mv [file] [path] 移动文件
+            $: git rm [filename]    删除文件
+    
+    4. 版本控制命令
+        [1] 退回到上一个的commit节点
+            $: git reset --hard HEAD^
+            说明: HEAD是commit指针, 一个^表示后退一个commit
+
+        [2] 去往指定的commit操作节点
+            $: git reset --hard [commit_id]
+
+        [3] 查看全部历史操作: 
+            $: git reflog
+            说明: 利用该操作可以使用reset去往任意历史位置
+
+        [4] 标签创建
+            $: git tag [名称] -m [message]
+            标签: 在工作的重要位置添加快照, 保存当时的工作状态, 一般用于版本迭代
+            注意: 标签的message信息可以不写, 但是最好添加
+
+            将标签添加到指定的commit_id:
+                git tag [名称] [commit_id] -m [message]
+
+        [5] 查看标签列表
+
+            git tag 查看标签列表
+            git show [tag_name]  查看标签信息表
+
+    5. 临时工作区
