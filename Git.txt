@@ -76,4 +76,7 @@
         [5] 将文件同步到本地仓库区
             $: git commit -m [message]
             说明: 每次同步都需要添加一定的同步信息, commit操作只能同步暂存区已经记录的内容
-            
+
+        [6] 查看commit日志
+            git log
+            git log --pretty=oneline
