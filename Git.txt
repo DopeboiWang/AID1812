@@ -127,3 +127,7 @@
         
         [2] 查看临时工作区列表:
             $: git stash list
+
+        [3] 应用某个保存的工作区:
+            $: git stash apply [stash]
+            
